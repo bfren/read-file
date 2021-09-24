@@ -1,4 +1,4 @@
-name: 'Read File Action'
+name: 'Read Any File'
 description: 'Read the contents of any file in a repository'
 inputs:
   file:
