@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Read file
         uses: ./
-         id: read_file
-         with:
-           file: ./LICENSE
+          id: read_file
+          with:
+            file: ./LICENSE
        - name: Echo file
          run: echo "${{ steps.read_file.outputs.contents }}"
