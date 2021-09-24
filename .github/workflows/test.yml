@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test read file action
     steps:
+      -
+        name: Checkout code
+        uses: actions/checkout@v2
       - name: Read file
         uses: ./
         id: read_file
