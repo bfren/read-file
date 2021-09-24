@@ -1,5 +1,7 @@
 name: 'Read Any File'
 description: 'Read the contents of any file in a repository'
+branding:
+  icon: 'file-text'
 inputs:
   file:
     description: 'The path of the file to be read, relative to the repository root'
