@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test read file action
+    steps:
+      - name: Read file
+        uses: ./
+         id: read_file
+         with:
+           file: ./LICENSE
+       - name: Echo file
+         run: echo "${{ steps.read_file.outputs.contents }}"
