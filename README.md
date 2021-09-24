@@ -12,8 +12,6 @@ Read any file from a repository.
 
 ## Usage
 
-The following is from the `test.yml` workflow in this repository:
-
 ```yml
 jobs:
   test:
@@ -24,10 +22,10 @@ jobs:
         name: Checkout code
         uses: actions/checkout@v2
       - name: Read file
-        uses: ./
+        uses: bfren/read-file@v1
         id: read_file
         with:
-          file: ./LICENSE
+          file: ./VERSION
       - name: Echo file
         run: echo "${{ steps.read_file.outputs.contents }}"
 ```
