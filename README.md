@@ -9,3 +9,25 @@ Read any file from a repository.
 ## Outputs
 
 - `contents`: the contents of the file
+
+## Usage
+
+The following is from the `test.yml` workflow in this repository:
+
+```yml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test read file action
+    steps:
+      -
+        name: Checkout code
+        uses: actions/checkout@v2
+      - name: Read file
+        uses: ./
+        id: read_file
+        with:
+          file: ./LICENSE
+      - name: Echo file
+        run: echo "${{ steps.read_file.outputs.contents }}"
+```
