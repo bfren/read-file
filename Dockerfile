@@ -1,6 +1,7 @@
 FROM alpine
 
 COPY LICENSE README.md /
-COPY entrypoint.sh /
+COPY entrypoint.sh /init
 
-ENTRYPOINT ["/entrypoint.sh"]
+RUN chmod +x /init
+ENTRYPOINT [ "/init" ]
