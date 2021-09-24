@@ -29,3 +29,12 @@ jobs:
       - name: Echo file
         run: echo "${{ steps.read_file.outputs.contents }}"
 ```
+
+## Licence
+
+> [MIT](https://mit.bfren.dev/2021)
+
+## Copyright
+
+> Copyright (c) 2021 bfren
+> Unless otherwise stated
