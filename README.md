@@ -4,7 +4,7 @@ Read any file from a repository.
 
 ## Inputs
 
-- `file`: the path to the file you want to read, relative to the repository root
+- `file`: the path to the file you want to read, relative to the repository root (default is ./VERSION)
 
 ## Outputs
 
@@ -20,7 +20,7 @@ jobs:
     steps:
       -
         name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Read file
         uses: bfren/read-file@v1
         id: read_file
