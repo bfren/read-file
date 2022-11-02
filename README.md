@@ -36,5 +36,5 @@ jobs:
 
 ## Copyright
 
-> Copyright (c) 2021 bfren
+> Copyright (c) 2021-2022 bfren
 > Unless otherwise stated
