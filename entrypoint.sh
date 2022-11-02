@@ -15,4 +15,4 @@ CONTENTS="${CONTENTS//$'\n'/'%0A'}"
 CONTENTS="${CONTENTS//$'\r'/'%0D'}"
 
 # Output contents
-echo "contents=${CONTENTS}" >> >> ${GITHUB_OUTPUT}
+echo "contents=${CONTENTS}" >> ${GITHUB_OUTPUT}
