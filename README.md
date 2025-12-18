@@ -20,9 +20,9 @@ jobs:
     steps:
       -
         name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Read file
-        uses: bfren/read-file@v1
+        uses: bfren/read-file@v2
         id: read_file
         with:
           file: ./VERSION
@@ -36,5 +36,5 @@ jobs:
 
 ## Copyright
 
-> Copyright (c) 2021-2022 bfren
+> Copyright (c) 2021-2025 bfren
 > Unless otherwise stated
